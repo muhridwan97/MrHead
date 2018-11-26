@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/kepala"
+        android:layout_width="252dp"
+        android:layout_height="249dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/brewok"
+        android:layout_width="116dp"
+        android:layout_height="187dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="@+id/kepala"
+        app:layout_constraintStart_toStartOf="@+id/kepala"
+        app:layout_constraintTop_toTopOf="@+id/kepala"
+        app:srcCompat="@drawable/beard" />
+
+    <ImageView
+        android:id="@+id/mata"
+        android:layout_width="120dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/kepala"
+        app:layout_constraintStart_toStartOf="@+id/kepala"
+        app:layout_constraintTop_toTopOf="@+id/kepala"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/alis"
+        android:layout_width="99dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/kepala"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/kepala"
+        app:layout_constraintTop_toTopOf="@+id/kepala"
+        app:srcCompat="@drawable/eyebrow" />
+
+    <ImageView
+        android:id="@+id/rambut"
+        android:layout_width="191dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/kepala"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="@+id/kepala"
+        app:layout_constraintTop_toTopOf="@+id/kepala"
+        app:srcCompat="@drawable/hair" />
+
+    <ImageView
+        android:id="@+id/kumis"
+        android:layout_width="242dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/kepala"
+        app:layout_constraintEnd_toEndOf="@+id/kepala"
+        app:layout_constraintStart_toStartOf="@+id/kepala"
+        app:srcCompat="@drawable/moustache" />
+
+    <CheckBox
+        android:id="@+id/cbRambut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:checked="true"
+        android:text="Rambut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kepala" />
+
+    <CheckBox
+        android:id="@+id/cbKumis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:checked="true"
+        android:text="Kumis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRambut" />
+
+    <CheckBox
+        android:id="@+id/cbAlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="80dp"
+        android:checked="true"
+        android:text="Alis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/cbRambut"
+        app:layout_constraintTop_toBottomOf="@+id/kepala" />
+
+    <CheckBox
+        android:id="@+id/cbJanggut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
+        android:checked="true"
+        android:text="Janggut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbKumis"
+        app:layout_constraintTop_toBottomOf="@+id/cbAlis" />
+
+</android.support.constraint.ConstraintLayout>
